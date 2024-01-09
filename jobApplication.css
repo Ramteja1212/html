@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: bold;
+    background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/05/Sky-Desktop-Backgrounds-Hd-Images.jpg);
+    image-orientation: flip;
+    background-color: #ccc;
+}
+h1{
+    color: darkorchid;
+    font-weight: bolder;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+.apply_box{
+    max-width: 500px;
+    padding: 25px;
+    background-color:wheat;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.title_small
+{
+    font-size: 10px;
+}
+.form_container
+{
+    margin-top: 20px;
+    align-content:stretch;
+    display:-moz-grid-line;
+    grid-template-columns:max-content;
+    gap: 20px;
+}
+.form_control
+{
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+}
+label
+{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+input,
+select,
+textarea
+{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size:15px ;
+}
+input:focus
+{
+    outline-color: solid black;
+}
+.button_container
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button
+{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: aliceblue;
+    border-radius: 8px;
+    transition: 0.3 ease-in;
+}
+button:hover
+{
+    background-color: #ccc;
+    border: 2px solid red ;
+    color: black;
+    transition: 0.3 ease-in;
+    cursor: pointer;
+}
+.textarea_control
+{
+    grid-column: 1/span 2;
+}
+.textarea_control textarea
+{
+    width: 100%;
+}
+@media (max-width: 460px) {
+    .textarea_control{
+        grid-column: 1/span 1;
+    }  
+}
